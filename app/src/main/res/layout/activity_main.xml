@@ -70,7 +70,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="20dp"
         android:orientation="vertical"
         android:paddingTop="16dp">
 
@@ -79,6 +78,7 @@
             android:layout_height="wrap_content"
             android:textSize="24dp"
             android:text="MY CHARACTERS"
+            android:layout_marginHorizontal="20dp"
             android:textColor="#202020"/>
 
         <TextView
@@ -86,6 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
             android:textSize="20dp"
             android:text="Looks like you have not added any favourite character!"
             android:textColor="#202020"
@@ -96,13 +97,15 @@
             android:id="@+id/my_character_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
             android:visibility="gone"/>
 
         <LinearLayout
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
             android:layout_marginTop="16dp">
 
             <LinearLayout

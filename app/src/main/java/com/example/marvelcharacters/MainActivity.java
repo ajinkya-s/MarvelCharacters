@@ -196,6 +196,13 @@ public class MainActivity extends AppCompatActivity {
                 no_character_text.setVisibility(View.VISIBLE);
                 my_character_list.setVisibility(View.GONE);
             }
+            else {
+                RecyclerView my_character_list = findViewById(R.id.my_character_list);
+                my_character_list.setLayoutManager(new GridLayoutManager(this, 1));
+                CharactersAdapter mAdapter = new CharactersAdapter(addedCharactersList, this);
+                my_character_list.setAdapter(mAdapter);
+                mAdapter.notifyDataSetChanged();
+            }
         }
     }
 }
