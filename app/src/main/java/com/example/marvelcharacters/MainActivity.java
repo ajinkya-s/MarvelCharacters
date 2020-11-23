@@ -10,6 +10,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
@@ -182,6 +183,8 @@ public class MainActivity extends AppCompatActivity {
             CharactersAdapter mAdapter = new CharactersAdapter(addedCharactersList, this);
             my_character_list.setAdapter(mAdapter);
             mAdapter.notifyDataSetChanged();
+
+            Toast.makeText(this,"CHARACTER ADDED TO YOUR LIST!!!",Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -203,6 +206,7 @@ public class MainActivity extends AppCompatActivity {
                 my_character_list.setAdapter(mAdapter);
                 mAdapter.notifyDataSetChanged();
             }
+            Toast.makeText(this,"CHARACTER REMOVED",Toast.LENGTH_SHORT).show();
         }
     }
 }
